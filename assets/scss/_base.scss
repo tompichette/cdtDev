@@ -59,7 +59,7 @@ a {
         .item {
             transition-property: opacity;
         }
-        
+
         .item,
         .active.left,
         .active.right {
@@ -89,7 +89,7 @@ a {
 .carousel-indicators {
     bottom: 30px;
     margin-bottom: 0;
-    
+
     li {
         background-color: rgba(256, 256, 256, 0.4);
         border: none;
@@ -107,12 +107,12 @@ a {
         }
     }
 }
-    
+
 /* ======= Header ======= */
 .header {
     position: fixed;
     width: 100%;
-    z-index: 30;    
+    z-index: 30;
     height: 60px;
     @include transition (none);
 
@@ -121,7 +121,7 @@ a {
         @include box-shadow(0 0 4px rgba(0, 0, 0, 0.5));
         a {
             color: $text-color;
-            
+
         }
         .logo {
             color: $color-primary;
@@ -132,15 +132,15 @@ a {
                 height: 40px;
                 @include border-radius(50%);
                 text-align: center;
-                
-                
+
+
             }
             .logo-icon {
                 width: 20px;
                 height: 20px;
                 margin-right: 0;
-                
-                
+
+
             }
         }
         .main-nav .nav .nav-link {
@@ -165,7 +165,7 @@ a {
         margin: 0;
         display: inline-block;
         float: left;
-        font-size: 28px;
+        font-size: 26px;
         padding-top: 15px;
         .logo-icon-wrapper {
             margin-right: 3px;
@@ -173,7 +173,7 @@ a {
             display: inline-block;
             top: -3px;
         }
-        
+
         .logo-icon {
             width: 30px;
             height: 30px;
@@ -183,8 +183,11 @@ a {
         }
     }
 }
-
-
+@media (max-width: 490px) {
+  .header .logo {
+    font-size: 20px;
+  }
+}
 .main-nav {
     margin-top: 6px;
     .navbar-toggler {
@@ -196,7 +199,7 @@ a {
         right:10px;
         top: 10px;
         background: rgba(0, 0, 0, 0.6);
-        
+
         &:focus {
             outline: none;
         }
@@ -208,7 +211,7 @@ a {
             @include border-radius(1px);
             & + .icon-bar {
 	            margin-top: 4px;
-	            
+
             }
         }
         &:hover {
@@ -217,15 +220,15 @@ a {
             }
         }
     }
-    
+
     .nav {
         .nav-item{
             font-weight: normal;
             font-size: 14px;
             margin-right: 10px;
-            
-            
-            
+
+
+
             .nav-link {
                 color: rgba(256, 256, 256, 0.65);
                 font-weight: 700;
@@ -233,11 +236,11 @@ a {
                     position: relative;
                     background: none;
                     color: #fff;
-                
+
 	            }
-                &:hover {  
-                    color: #fff;   
-                    background: none;         
+                &:hover {
+                    color: #fff;
+                    background: none;
                 }
                 &:focus {
                     outline: none;
@@ -247,14 +250,14 @@ a {
                     outline: none;
                     background: none;
                 }
-            }    
+            }
 
             &:last-child {
                 margin-right: 0;
             }
         }
 
-        
+
     }
 }
 
@@ -279,6 +282,3 @@ a {
         color: $color-pink;
     }
 }
-
-
-
